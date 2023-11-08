@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Calculadora</h1>
+    <form action="/calcular" method="post">
+      <div class="mb-3">
+        <label for="numX" class="form-label">Número X</label>
+        <input type="number" class="form-control" id="numX" name="numX" required>
+      </div>
+      <div class="mb-3">
+        <label for="numY" class="form-label">Número Y</label>
+        <input type="number" class="form-control" id="numY" name="numY" required>
+      </div>
+      <div class="mb-3">
+        <label for="operacao" class="form-label">Operação</label>
+        <select class="form-select" id="operacao" name="operacao" required>
+          <option value="+">Soma (+)</option>
+          <option value="-">Subtração (-)</option>
+          <option value="">Multiplicação ()</option>
+          <option value="/">Divisão (/)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Calcular</button>
+    </form>
+  </div>
+</body>
+</html>
